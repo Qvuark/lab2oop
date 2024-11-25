@@ -5,10 +5,14 @@
 #include <string>
 #include <sstream>
 #include <stdexcept>
+#include <cmath>
 
-class MyMatrix {
+class MyMatrix 
+{
 private:
     std::vector<std::vector<double>> m_matrix;
+    mutable double cachedDeterminant = NAN;
+    mutable bool determinantCached = false;
 
     std::vector<std::vector<double>> GetTransponedArray() const;
     void makeJaggedArrayNormal(std::vector<std::vector<double>>& jaggedArray);
@@ -22,6 +26,7 @@ public:
     MyMatrix(const std::vector<std::string>& stringArray);
     MyMatrix(const std::string& stringArray);
 
+    MyMatrix getMatrix() const;
     int getHeight() const;
     int getWidth() const;
     std::string toString() const;
@@ -31,6 +36,7 @@ public:
     const std::vector<double>& operator[](int row) const;
     MyMatrix GetTransponedCopy() const;
     void TransponeMe();
+    double CalcDeterminant() const;
 };
 
 std::ostream& operator<<(std::ostream& os, const MyMatrix& matrix);

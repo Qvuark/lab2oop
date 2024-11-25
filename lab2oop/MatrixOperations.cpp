@@ -49,14 +49,59 @@ std::vector<std::vector<double>> MyMatrix::GetTransponedArray() const
     }
     return result;
 }
-
 MyMatrix MyMatrix::GetTransponedCopy() const
 {
     return MyMatrix(GetTransponedArray());
 }
-
 void MyMatrix::TransponeMe()
 {
     m_matrix = GetTransponedArray();
+}
+double MyMatrix::CalcDeterminant() const 
+{
+    if (getHeight() != getWidth()) 
+    {
+        throw std::invalid_argument("Determinant can only be calculated for square matrices");
+    }
+    if (determinantCached) 
+    {
+        return cachedDeterminant; 
+    }
+    std::vector<std::vector<double>> tempMatrix = m_matrix;
+    double determinant = 1.0;
+    for (int i = 0; i < getHeight(); ++i) 
+    {
+        if (tempMatrix[i][i] == 0) 
+        {
+            bool found = false;
+            for (int j = i + 1; j < getHeight(); ++j) 
+            {
+                if (tempMatrix[j][i] != 0) 
+                {
+                    std::swap(tempMatrix[i], tempMatrix[j]);
+                    determinant *= -1;
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) 
+            {
+                determinant = 0;
+                break;
+            }
+        }
+        for (int j = i + 1; j < getHeight(); ++j) 
+        {
+            double factor = tempMatrix[j][i] / tempMatrix[i][i];
+            for (int k = i; k < getWidth(); ++k) 
+            {
+                tempMatrix[j][k] -= factor * tempMatrix[i][k];
+            }
+        }
+        determinant *= tempMatrix[i][i];
+    }
+    cachedDeterminant = determinant;
+    determinantCached = true;
+    return determinant;
 }
 

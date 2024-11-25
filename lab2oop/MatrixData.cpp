@@ -5,6 +5,7 @@
 #include <stdexcept>
 #include "lab2oop.h"
 
+
 MyMatrix::MyMatrix(const MyMatrix& someMatrix) 
 {
     m_matrix = someMatrix.m_matrix;
@@ -28,6 +29,10 @@ MyMatrix::MyMatrix(const std::string& stringArray)
     std::vector<std::vector<double>> tempArray = turnStringArrayIntoNormal(stringArray);
     m_matrix = tempArray;
 }
+MyMatrix MyMatrix::getMatrix() const
+{
+    return m_matrix;
+}
 int MyMatrix::getHeight() const 
 {
     return m_matrix.size();
@@ -38,6 +43,7 @@ int MyMatrix::getWidth() const
 }
 std::vector<double>& MyMatrix::operator[](int row) 
 {
+    determinantCached = false;
     if (row < 0 || row >= getHeight()) 
     {
         throw std::out_of_range("Row index out of range");
