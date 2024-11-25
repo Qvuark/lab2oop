@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\roma1\\source\\repos\\lab2oop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EA6598C-2B87-4151-8D49-29B798F32FED}|lab2oop\\lab2oop.vcxproj|C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2oop\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5EA6598C-2B87-4151-8D49-29B798F32FED}|lab2oop\\lab2oop.vcxproj|solutionrelative:lab2oop\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5EA6598C-2B87-4151-8D49-29B798F32FED}|lab2oop\\lab2oop.vcxproj|C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2oop\\MatrixData.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5EA6598C-2B87-4151-8D49-29B798F32FED}|lab2oop\\lab2oop.vcxproj|solutionrelative:lab2oop\\MatrixData.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4769E823-929E-41D6-8E8B-81FB0F373878}|lab2.2oop\\lab2.2oop.vcxproj|C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2.2oop\\lab2.2oop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4769E823-929E-41D6-8E8B-81FB0F373878}|lab2.2oop\\lab2.2oop.vcxproj|solutionrelative:lab2.2oop\\lab2.2oop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4769E823-929E-41D6-8E8B-81FB0F373878}|lab2.2oop\\lab2.2oop.vcxproj|C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2.2oop\\lab2.2oop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4769E823-929E-41D6-8E8B-81FB0F373878}|lab2.2oop\\lab2.2oop.vcxproj|solutionrelative:lab2.2oop\\lab2.2oop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4769E823-929E-41D6-8E8B-81FB0F373878}|lab2.2oop\\lab2.2oop.vcxproj|C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2.2oop\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4769E823-929E-41D6-8E8B-81FB0F373878}|lab2.2oop\\lab2.2oop.vcxproj|solutionrelative:lab2.2oop\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EA6598C-2B87-4151-8D49-29B798F32FED}|lab2oop\\lab2oop.vcxproj|C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2oop\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5EA6598C-2B87-4151-8D49-29B798F32FED}|lab2oop\\lab2oop.vcxproj|solutionrelative:lab2oop\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EA6598C-2B87-4151-8D49-29B798F32FED}|lab2oop\\lab2oop.vcxproj|C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2oop\\lab2oop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -26,11 +38,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2.2oop\\main.cpp",
+              "RelativeDocumentMoniker": "lab2.2oop\\main.cpp",
+              "ToolTip": "C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2.2oop\\main.cpp",
+              "RelativeToolTip": "lab2.2oop\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-25T17:06:06.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "lab2.2oop.h",
+              "DocumentMoniker": "C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2.2oop\\lab2.2oop.h",
+              "RelativeDocumentMoniker": "lab2.2oop\\lab2.2oop.h",
+              "ToolTip": "C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2.2oop\\lab2.2oop.h",
+              "RelativeToolTip": "lab2.2oop\\lab2.2oop.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-25T16:50:42.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "lab2.2oop.cpp",
+              "DocumentMoniker": "C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2.2oop\\lab2.2oop.cpp",
+              "RelativeDocumentMoniker": "lab2.2oop\\lab2.2oop.cpp",
+              "ToolTip": "C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2.2oop\\lab2.2oop.cpp",
+              "RelativeToolTip": "lab2.2oop\\lab2.2oop.cpp",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAABcAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-25T16:07:28.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MatrixOperations.cpp",
               "DocumentMoniker": "C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2oop\\MatrixOperations.cpp",
               "RelativeDocumentMoniker": "lab2oop\\MatrixOperations.cpp",
@@ -38,12 +89,11 @@
               "RelativeToolTip": "lab2oop\\MatrixOperations.cpp",
               "ViewState": "AQIAAEsAAAAAAAAAAAAAAGcAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-18T18:21:40.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T18:21:40.988Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2oop\\main.cpp",
               "RelativeDocumentMoniker": "lab2oop\\main.cpp",
@@ -56,26 +106,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "lab2oop.h",
               "DocumentMoniker": "C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2oop\\lab2oop.h",
               "RelativeDocumentMoniker": "lab2oop\\lab2oop.h",
               "ToolTip": "C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2oop\\lab2oop.h",
               "RelativeToolTip": "lab2oop\\lab2oop.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-10T23:12:22.378Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MatrixData.cpp",
               "DocumentMoniker": "C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2oop\\MatrixData.cpp",
               "RelativeDocumentMoniker": "lab2oop\\MatrixData.cpp",
               "ToolTip": "C:\\Users\\roma1\\source\\repos\\lab2oop\\lab2oop\\MatrixData.cpp",
               "RelativeToolTip": "lab2oop\\MatrixData.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAUAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAG4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-10T23:11:54.212Z",
               "EditorCaption": ""
