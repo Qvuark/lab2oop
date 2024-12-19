@@ -20,7 +20,7 @@ public:
     MyTime AddOneHour();
     MyTime AddSeconds(int s);
     int Difference(const MyTime& mt1, const MyTime& mt2) const;
-    std::string WhatLesson(const MyTime& mt) const;
+    std::string WhatLesson() const;
 };
 
 #endif 

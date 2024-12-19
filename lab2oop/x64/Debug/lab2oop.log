@@ -1,4 +1,11 @@
-﻿  main.cpp
+﻿  MatrixData.cpp
+C:\Users\roma1\source\repos\lab2oop\lab2oop\MatrixData.cpp(39,25): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\roma1\source\repos\lab2oop\lab2oop\MatrixData.cpp(43,28): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\roma1\source\repos\lab2oop\lab2oop\MatrixData.cpp(114,33): warning C4267: +=: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\roma1\source\repos\lab2oop\lab2oop\MatrixData.cpp(118,18): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  MatrixOperations.cpp
+  main.cpp
+  Создание кода...
   lab2oop.vcxproj -> C:\Users\roma1\source\repos\lab2oop\x64\Debug\lab2oop.exe
   "pwsh.exe" не является внутренней или внешней
   командой, исполняемой программой или пакетным файлом.

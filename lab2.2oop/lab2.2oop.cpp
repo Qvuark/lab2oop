@@ -50,31 +50,41 @@ int MyTime::Difference(const MyTime& mt1, const MyTime& mt2) const
     int diffSeconds = mt1.ToSecSinceMidnight() - mt2.ToSecSinceMidnight();
     return diffSeconds;
 }
-std::string MyTime::WhatLesson(const MyTime& mt) const
+std::string MyTime::WhatLesson() const 
 {
-    int time = mt.ToSecSinceMidnight();
-    if (time >= 28800 && time <= 33600)
-        return "Зараз перша пара";
-    if (time >= 33601 && time <= 34800)
-        return "Зараз перерва між першою та другою парою";
-    if (time >= 34801 && time <= 39600)
-        return "Зараз друга пара";
-    if (time >= 39601 && time <= 40800)
-        return "Зараз перерва між другою та третьою парою";
-    if (time >= 40801 && time <= 45600)
-        return "Зараз третя пара";
-    if (time >= 45601 && time <= 46800)
-        return "Зараз перерва між третьою та четвертою парою";
-    if (time >= 46801 && time <= 51600)
-        return "Зараз четверта пара";
-    if (time >= 51601 && time <= 52800)
-        return "Зараз перерва між четвертою та пятою парою";
-    if (time >= 52801 && time <= 57600)
-        return "Зараз п'ята пара";
-    if (time >= 57601 && time <= 58800)
-        return "Зараз перерва між п'ятою та шостою парою";
-    if (time >= 58801 && time <= 63600)
-        return "Зараз шоста пара";
-    else
-        return "Пар немає, ти вільна людина (поки що)";
+    int time = ToSecSinceMidnight();
+    int startLessons = 8 * 60 * 60;         // 8:00 в секундах
+    int endLessons = (17 * 60 + 40) * 60;  // 17:40 в секундах
+    int lessonTime = 80 * 60;              // 1 пара = 80 минут в секундах
+    int breakTime = 20 * 60;               // Перерыв = 20 минут в секундах
+
+    if (time < startLessons) 
+    {
+        return "Пари ще не розпочалися";
+    }
+    else if (time >= endLessons) 
+    {
+        return "Пари вже закінчилися";
+    }
+    else 
+    {
+        for (int i = 0; i < 6; i++) 
+        {
+            int lessonStart = startLessons + (lessonTime + breakTime) * i;
+            int lessonEnd = lessonStart + lessonTime;
+            int breakStart = lessonEnd + 1;
+            int breakEnd = breakStart + breakTime;
+
+            if (time >= lessonStart && time <= lessonEnd) 
+            {
+                return "Зараз " + std::to_string(i + 1) + "-а пара";
+            }
+            else if (time >= breakStart && time < breakEnd) 
+            {
+                return "Зараз перерва між " + std::to_string(i + 1) + "-ю та " + std::to_string(i + 2) + "-ю парою";
+            }
+        }
+    }
+
+    return "Невідомо";
 }

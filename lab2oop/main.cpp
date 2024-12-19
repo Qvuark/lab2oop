@@ -17,8 +17,10 @@ int main()
         std::cout << "Enter data for 2 matrix:\n\n";
 //        MyMatrix matrix2 = copyOfMatrix(matrix1);
         MyMatrix matrix2(matrix1);
-
+        std::cout << "Determinant of 1 matrix:" << matrix1.CalcDeterminant() << std::endl;
+        std::cout << "Determinant of 1 matrix:" << matrix1.CalcDeterminant() << std::endl;
         matrix1.setElement(0, 1, 3.5);
+        std::cout << "Determinant of 1 matrix:" << matrix1.CalcDeterminant() << std::endl;
         MyMatrix sumMatrix = matrix1 + matrix2;
         MyMatrix productMatrix = matrix1 * matrix2;
 

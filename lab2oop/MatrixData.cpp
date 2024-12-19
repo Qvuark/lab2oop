@@ -8,7 +8,6 @@
 
 MyMatrix::MyMatrix(const MyMatrix& someMatrix) 
 {
-    std::cerr << "!!";
     m_matrix = someMatrix.m_matrix;
 }
 MyMatrix::MyMatrix(const std::vector<std::vector<double>>& Array) 
@@ -94,22 +93,17 @@ std::vector<std::vector<double>> MyMatrix::turnStringArrayIntoNormal(const std::
 }
 std::vector<std::vector<double>> MyMatrix::turnStringArrayIntoNormal(const std::string& array) 
 {
-    std::vector<std::vector<double>> doubleArray;
+    std::vector<std::string>stringArray;
     std::istringstream lineStream(array);
     std::string line;
     while (std::getline(lineStream, line)) 
     {
-        if (line.empty()) continue;
-        std::vector<double> row;
-        std::istringstream rowStream(line);
-        double number;
-        while (rowStream >> number) 
+        if (!line.empty())
         {
-            row.push_back(number);
+            stringArray.push_back(line);
         }
-        doubleArray.push_back(row);
     }
-    return doubleArray;
+    return turnStringArrayIntoNormal(stringArray);
 }
 void MyMatrix::makeJaggedArrayNormal(std::vector<std::vector<double>>& jaggedArray) 
 {

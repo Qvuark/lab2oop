@@ -76,7 +76,7 @@ Enter your choice: )";
             break;
         }
         case 6:
-            std::cout << time.WhatLesson(time) << std::endl;
+            std::cout << time.WhatLesson() << std::endl;
             break;
         case 7:
             exit = true;

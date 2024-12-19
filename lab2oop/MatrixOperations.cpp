@@ -67,6 +67,7 @@ double MyMatrix::CalcDeterminant() const
     {
         return cachedDeterminant; 
     }
+    std::cout << "Recalculating determinant";
     std::vector<std::vector<double>> tempMatrix = m_matrix;
     double determinant = 1.0;
     for (int i = 0; i < getHeight(); ++i) 
