@@ -8,6 +8,7 @@
 
 MyMatrix::MyMatrix(const MyMatrix& someMatrix) 
 {
+    std::cerr << "!!";
     m_matrix = someMatrix.m_matrix;
 }
 MyMatrix::MyMatrix(const std::vector<std::vector<double>>& Array) 
@@ -41,16 +42,19 @@ int MyMatrix::getWidth() const
 {
     return m_matrix[0].size();
 }
-std::vector<double>& MyMatrix::operator[](int row) 
+//std::vector<double>& MyMatrix::operator[](int row) 
+//{
+//    determinantCached = false;
+//    if (row < 0 || row >= getHeight()) 
+//    {
+//        throw std::out_of_range("Row index out of range");
+//    }
+//    return m_matrix[row];
+//}
+void MyMatrix::setElement(int a, int b, double c)
 {
-    determinantCached = false;
-    if (row < 0 || row >= getHeight()) 
-    {
-        throw std::out_of_range("Row index out of range");
-    }
-    return m_matrix[row];
+    m_matrix[a][b] = c;
 }
-
 const std::vector<double>& MyMatrix::operator[](int row) const
 {
     if (row < 0 || row >= getHeight()) 

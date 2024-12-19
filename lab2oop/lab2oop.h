@@ -29,10 +29,11 @@ public:
     MyMatrix getMatrix() const;
     int getHeight() const;
     int getWidth() const;
+    void setElement(int a, int b, double c);
     std::string toString() const;
     friend MyMatrix operator+(const MyMatrix& array1, const MyMatrix& array2);
     friend MyMatrix operator*(const MyMatrix& array1, const MyMatrix& array2);
-    std::vector<double>& operator[](int row);
+//    std::vector<double>& operator[](int row);
     const std::vector<double>& operator[](int row) const;
     MyMatrix GetTransponedCopy() const;
     void TransponeMe();

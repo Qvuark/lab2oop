@@ -15,10 +15,20 @@ int main()
         std::cout << "Enter data for 1 matrix:\n\n";
         MyMatrix matrix1 = createMatrix();
         std::cout << "Enter data for 2 matrix:\n\n";
-        MyMatrix matrix2 = createMatrix();
+//        MyMatrix matrix2 = copyOfMatrix(matrix1);
+        MyMatrix matrix2(matrix1);
 
+        matrix1.setElement(0, 1, 3.5);
         MyMatrix sumMatrix = matrix1 + matrix2;
         MyMatrix productMatrix = matrix1 * matrix2;
+
+        std::cout << "Matrix 1:\n" << matrix1;
+        std::cout << "Matrix 2:\n" << matrix2;
+        std::cout << "Sum Matrix:\n" << sumMatrix;
+        std::cout << "Product Matrix:\n" << productMatrix;
+
+        sumMatrix = matrix1 + matrix2;
+        productMatrix = matrix1 * matrix2;
 
         std::cout << "Matrix 1:\n" << matrix1;
         std::cout << "Matrix 2:\n" << matrix2;
